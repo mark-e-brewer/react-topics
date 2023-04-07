@@ -30,5 +30,5 @@ Loading.propTypes = {
 
 Loading.defaultProps = {
   color: 'red',
-  children: 'nothing here',
+  children: 'Nothing Here!',
 };
