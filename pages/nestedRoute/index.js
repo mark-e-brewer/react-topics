@@ -9,12 +9,12 @@ export default function CountByOne() {
         <Counter color="red" />
         <Counter color="green" />
       </div>
-      <div>
+      <div id="hi">
         {/* <a href="/nestedRoute/contacts">
           <p>
             Go to nested page.
           </p> */}
-        {/* </a> */}
+        {/* </a> */} */
       </div>
     </>
   );
