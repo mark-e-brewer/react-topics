@@ -15,18 +15,19 @@ export default function Counter({ color, children }) {
   return (
     <>
       <div>
+        <div>{children}</div>
         <button
           type="button"
           onClick={handleClick}
           style={{
             color,
-            width: '60px',
-            height: '35px',
+            width: '45px',
+            height: '30px',
           }}
-        >like ({like})
+        >Like
         </button>
-        {children}
         <button type="button" onClick={handleReset} id="resetBtn">Reset</button>
+        <p>{like}</p>
       </div>
     </>
   );
