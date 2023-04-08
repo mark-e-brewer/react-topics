@@ -31,7 +31,7 @@ export default function NavBar() {
             <Link passHref href="/forms">
               <Nav.Link>Forms</Nav.Link>
             </Link>
-            <Link passHref href="/contacts">
+            <Link passHref href="/nestedRoute">
               <Nav.Link>Contacts</Nav.Link>
             </Link>
           </Nav>
