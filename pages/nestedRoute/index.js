@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import Counter from '../../components/LikeCountButton';
 
@@ -10,11 +11,11 @@ export default function CountByOne() {
         <Counter color="green" />
       </div>
       <div id="hi">
-        {/* <a href="/nestedRoute/contacts">
+        <Link passHref href="/nestedRoute/contacts">
           <p>
-            Go to nested page.
-          </p> */}
-        {/* </a> */} */
+            Hello!
+          </p>
+        </Link>
       </div>
     </>
   );
