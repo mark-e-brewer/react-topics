@@ -12,3 +12,58 @@
 .resetBtn {
   width: 60px;
 }
+
+
+/* Container for the form */
+.form-container {
+  width: 400px;
+  margin: 0 auto;
+}
+
+/* Form title */
+.form-title {
+  text-align: center;
+}
+
+/* Form input fields */
+.form-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Form select dropdown */
+.form-select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Form submit button */
+.form-submit {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+/* Cards container */
+.cards-container {
+  margin-top: 20px;
+}
+
+/* Cards title */
+.cards-title {
+  text-align: center;
+}
+
+/* Individual cards */
+.card {
+  background-color: #f8f9fa;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
