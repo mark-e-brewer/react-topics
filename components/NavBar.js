@@ -37,6 +37,9 @@ export default function NavBar() {
             <Link passHref href="/contactCards">
               <Nav.Link>Contact Cards</Nav.Link>
             </Link>
+            <Link passHref href="/testPage">
+              <Nav.Link>Testing</Nav.Link>
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
