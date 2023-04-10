@@ -32,7 +32,10 @@ export default function NavBar() {
               <Nav.Link>Forms</Nav.Link>
             </Link>
             <Link passHref href="/nestedRoute">
-              <Nav.Link>Contacts</Nav.Link>
+              <Nav.Link>Likes</Nav.Link>
+            </Link>
+            <Link passHref href="/contactCards">
+              <Nav.Link>Contact Cards</Nav.Link>
             </Link>
           </Nav>
         </Navbar.Collapse>

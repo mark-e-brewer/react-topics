@@ -11,10 +11,10 @@ export default function CountByOne() {
         <Counter color="green" />
       </div>
       <div id="hi">
-        <Link passHref href="/nestedRoute/contacts">
-          <p>
+        <Link passHref href="/nestedRoute/likes">
+          <button type="button">
             Hello!
-          </p>
+          </button>
         </Link>
       </div>
     </>
