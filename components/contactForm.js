@@ -37,7 +37,7 @@ const FormWithCard = () => {
 
   return (
     <div className="form-container">
-      <h1 className="form-title">Form with Card Example</h1>
+      <h1 className="form-title">Person Info Form</h1>
       <form className="form" onSubmit={handleFormSubmit}>
         <label htmlFor="name">Name:</label>
         <input
@@ -87,9 +87,8 @@ const FormWithCard = () => {
         <br />
         <button className="form-submit" type="submit">Submit</button>
       </form>
-      <h2>Cards:</h2>
       <div className="cards-container">
-        <h2 className="cards-title">Cards</h2>
+        <h2 className="cards-title">Contact Cards</h2>
         {cards.map((card) => (
           <div className="cards-container">
             <h2 className="cards-title">Cards</h2>
