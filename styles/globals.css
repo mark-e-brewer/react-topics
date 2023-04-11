@@ -67,3 +67,182 @@
   padding: 10px;
   margin-bottom: 10px;
 }
+
+.card1Div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.card1 {
+  background: linear-gradient(180deg, #edf2f7 0%, #cbd5e0 100%);
+  color: #4a5568;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  margin: 0 auto;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card1:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+  transition: 0.2 ease-in-out;
+}
+
+.card1:hover {
+  filter: brightness(107%);
+  transition: 0.2s ease-in-out;
+}
+
+
+.card1header {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 0;
+  color: #3d3d3d;
+}
+
+.card1Element {
+  margin-bottom: 8px;
+  color: #7c7c7c;
+}
+
+.card1Element:last-child {
+  margin-bottom: 0;
+}
+
+.form1Div {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.form1Input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
+  background: linear-gradient(180deg, #edf2f7 0%, #cbd5e0 100%);
+  color: #4a5568;
+  transition: background 0.4s ease;
+}
+
+.form1Select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
+  background: linear-gradient(180deg, #edf2f7 0%, #cbd5e0 100%);
+  color: #4a5568;
+  transition: background 0.4s ease;
+}
+
+.form1Button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4299e1;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#nameInput1::placeholder,
+#phoneNumberInput1::placeholder,
+#emailInput1::placeholder {
+  color: #a0aec0;
+}
+
+#ageSelect1::placeholder {
+  color: #a0aec0;
+}
+
+.form1Button:hover {
+  background-color: #38a169;
+  transform: scale(1.05);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#submitButton1:hover {
+  background-color: #79b4fb;
+}
+
+.form1Input:hover,
+.form1Select:hover {
+  background: linear-gradient(180deg, #edf2f7 0%, #f7fafc 100%);
+  transition: background 0.3s ease-in-out;
+}
+
+#incrementCountContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#likeBtn {
+  background-color: #3f51b5;
+  color: #ffffff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun font */
+}
+
+#likeBtn:hover {
+  background-color: #303f9f;
+  transform: scale(1.05);
+}
+
+#resetBtn {
+  background-color: #f44336;
+  color: #ffffff;
+  padding: 5px 10px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun font */
+}
+
+#resetBtn:hover {
+  background-color: #d32f2f;
+  transform: scale(1.05);
+}
+
+#likeCount {
+  margin-left: 10px;
+  font-size: 16px;
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun font */
+}
+
+.likeCountAnimation {
+  animation: likeCountAnimation 0.5s ease infinite;
+}
+
+@keyframes likeCountAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#childText {
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun font */
+}

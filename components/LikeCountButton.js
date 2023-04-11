@@ -14,8 +14,8 @@ export default function Counter({ color, children }) {
 
   return (
     <>
-      <div>
-        <div>{children}</div>
+      <div id="incrementCountContainer">
+        <div id="childText">{children}</div>
         <button
           type="button"
           onClick={handleClick}
@@ -24,10 +24,16 @@ export default function Counter({ color, children }) {
             width: '45px',
             height: '30px',
           }}
-        >Like
+          id="likeBtn"
+        >
+          Like
         </button>
-        <button type="button" onClick={handleReset} id="resetBtn">Reset</button>
-        <p>{like}</p>
+        <button type="button" onClick={handleReset} id="resetBtn">
+          Reset
+        </button>
+        <p id="likeCount" className={like > 0 ? 'likeCountAnimation' : ''}>
+          {like}
+        </p>
       </div>
     </>
   );
