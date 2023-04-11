@@ -6,9 +6,7 @@ export default function CountByOne() {
   return (
     <>
       <div>
-        <Counter />
-        <Counter color="red" />
-        <Counter color="green" />
+        <Counter color="white" />
       </div>
       <div id="hi">
         <Link passHref href="/nestedRoute/likes">

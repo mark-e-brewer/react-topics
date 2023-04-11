@@ -7,7 +7,7 @@ const CardFormEdit = () => {
   const [age, setAge] = useState(''); // State for age input
   const [cards, setCards] = useState([]); // State for cards array
   const [cardId, setCardId] = useState(0); // State for card ID counter
-  const [editCardId, setEditCardId] = useState(null); // State for card ID being edited
+  const [editSubCardId, setEditSubCardId] = useState(null); // State for card ID being edited
 
   const handleNameChange = (e) => {
     setName(e.target.value); // Update the name state with input value
@@ -28,10 +28,10 @@ const CardFormEdit = () => {
   const handleSubmit = (e) => {
     e.preventDefault(); // Prevent form submission
 
-    if (editCardId !== null) {
+    if (editSubCardId !== null) {
       // If editing an existing card
       const updatedCards = cards.map((card) => {
-        if (card.id === editCardId) {
+        if (card.id === editSubCardId) {
           // Update the edited card with new data
           return {
             ...card,
@@ -47,8 +47,8 @@ const CardFormEdit = () => {
       // Update the cards state with the updated cards array
       setCards(updatedCards);
 
-      // Reset the editCardId state
-      setEditCardId(null);
+      // Reset the editSubCardId state
+      setEditSubCardId(null);
     } else {
       // If creating a new card
       // Create a new card object with the submitted data and unique ID
@@ -81,8 +81,8 @@ const CardFormEdit = () => {
     setEmail(card.email);
     setAge(card.age);
 
-    // Set the editCardId state to the ID of the card being edited
-    setEditCardId(card.id);
+    // Set the editSubCardId state to the ID of the card being edited
+    setEditSubCardId(card.id);
   };
 
   return (
@@ -114,7 +114,7 @@ const CardFormEdit = () => {
             </option>
           ))}
         </select>
-        <button type="submit">{editCardId !== null ? 'Update Card' : 'Add Card'}</button>
+        <button type="submit">{editSubCardId !== null ? 'Update Card' : 'Add Card'}</button>
       </form>
       <div>
         {cards.map((card) => (

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const FormWithCard = () => {
+const ContactFormWithCard = () => {
   const [formData, setFormData] = useState({
     name: '',
     phoneNumber: '',
@@ -114,4 +114,4 @@ const FormWithCard = () => {
   );
 };
 
-export default FormWithCard;
+export default ContactFormWithCard;
