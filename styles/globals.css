@@ -246,3 +246,52 @@
 #childText {
   font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun font */
 }
+
+/* ProductForm.css */
+
+/* Styling for product form */
+.product-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.product-form__label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.product-form__input,
+.product-form__textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.product-form__button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Styling for product card */
+.product-card {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.product-card__title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.product-card__field {
+  margin-bottom: 5px;
+}
