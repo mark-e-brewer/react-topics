@@ -40,6 +40,9 @@ export default function NavBar() {
             <Link passHref href="/testPage">
               <Nav.Link>Testing</Nav.Link>
             </Link>
+            <Link passHref href="/chatsPage">
+              <Nav.Link>Chats Page</Nav.Link>
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
